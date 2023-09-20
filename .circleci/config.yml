@@ -7,8 +7,8 @@ jobs:
     working_directory: ~/app
     environment:
       MY_VAR: "my-value"
-      steps:
-        - checkout
-        - run: echo $MY_VAR
-        - run: node --version
-        - run: npm install
+    steps:
+      - checkout
+      - run: echo $MY_VAR
+      - run: node --version
+      - run: npm install
