@@ -10,7 +10,7 @@ jobs:
       - checkout
 
       - run: docker --version
-      - run: sudo systemctl status docker
+      - run: sudo service docker start
 
       # - run: docker build -t simple-node . 
       # - run: docker tag simple-node $DOCKER_USERNAME/simple-node
